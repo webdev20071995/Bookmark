@@ -16,6 +16,11 @@
     font-display: swap;
 }
 
+*:focus{
+    outline: 2px dashed var(--text-color);
+    outline-offset: 2px
+}
+
 /* GLOBAL */
 html {
     box-sizing: border-box;
