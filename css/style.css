@@ -66,6 +66,7 @@ html {
 
 /* BUTTON */
 .button {
+    font-family: "Rubik", "Arial", sans-serif;
     text-decoration: none;
     box-sizing: border-box;
     background-color: #FA5959;
@@ -137,6 +138,7 @@ html {
 }
 
 .sitenav-link {
+    font-family: "Rubik", "Arial", sans-serif;
     font-size: 13px;
     line-height: 17px;
     font-weight: 400;
@@ -158,12 +160,14 @@ html {
 }
 
 .hero-heading {
+    font-family: "Rubik", "Arial", sans-serif;
     font-size: 48px;
     line-height: 52px;
     font-weight: 500;
 }
 
 .hero-text{
+    font-family: "Rubik", "Arial", sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
