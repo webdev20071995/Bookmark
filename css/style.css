@@ -83,6 +83,7 @@ html {
     letter-spacing: 0.15px;
     background-color: #fff;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
     img {
@@ -149,10 +150,10 @@ html {
 .button--blue:hover{
     border-color: var(--blue);
     background-color: #fff;
-    color: var(--red);
+    color: var(--blue);
 }
 
-.button--gry {
+.button--grey {
     background-color: #f7f7f7;
     color: var(--text-color);
 }
@@ -371,5 +372,61 @@ html {
 /* FEATURES */
 .features-section-info{
     margin-bottom: 44px;
+}
+
+
+/* HERO */
+.hero {
+    padding-top: 66px;
+    padding-bottom: 105px;
+    background-image: url(../img/blue-pill-bg.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 705px) 200px;
+}
+
+.hero__container {
+    display: flex; 
+    align-items: flex-start;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 540px;
+    padding-top: 66px;
+    margin-right: 65px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.hero__description {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color-50);
+}
+
+.hero__actions {
+    display: flex;
+}
+
+.hero__actions-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.hero-img {
+    flex-shrink: 0;
+    width: 578px;
+    height: 385px;
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
