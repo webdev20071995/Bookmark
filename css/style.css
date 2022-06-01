@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: "Rubik";
-    src: url("/fonts/Rubik-LightItalic.woff2") format("woff2"),
-    url("/fonts/Rubik-LightItalic.woff") format("woff");
+    src: url("/fontsRubik-LightItalic.woff2") format("woff2"),
+    url("/fontsRubik-LightItalic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/fonts/Poppins-Black.woff2') format('woff2'),
-        url('/fonts/Poppins-Black.woff') format('woff');
+    src: url('/fontsPoppins-Black.woff2') format('woff2'),
+        url('/fontsPoppins-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Nunito Sans';
-    src: url('/fonts/NunitoSans-Regular.woff2') format('woff2'),
-        url('/fonts/NunitoSans-Regular.woff') format('woff');
+    src: url('/fontsNunitoSans-Regular.woff2') format('woff2'),
+        url('/fontsNunitoSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
-        url('/fonts/Poppins-SemiBold.woff') format('woff');
+    src: url('/fontsPoppins-SemiBold.woff2') format('woff2'),
+        url('/fontsPoppins-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,7 @@
 
 *:focus{
     outline: 2px dashed rgb(10, 10, 190);
-    outline-offset: 2px
+    outline-offset: 2px;
 }
 
 /* GLOBAL */
@@ -99,96 +99,156 @@ html {
   /* CONTAINER  */
     .container {
     width: 100%;
-    max-width: 1440px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main-content{
+    flex-grow: 1;
 }
 
 
 /* BUTTON */
 .button {
-    font-family: "Rubik", "Arial", sans-serif;
-    text-decoration: none;
-    box-sizing: border-box;
-    background-color: #FA5959;
     display: inline-block;
-    padding: 10px 24px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 13px;
-    line-height: 17px;
+    padding: 8px 22px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    line-height: 28px;
     font-weight: 500;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    text-decoration: none;
-    letter-spacing: 1.5px;
     white-space: nowrap;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
-.button-link{
-    color: #fff;
-    text-decoration: none;
-}
-
-.button-link:hover{
-    color: #fa5959;
-}
-
-.button-link:active{
-    color: #fa5959;
-}
-
-.button:hover{
-    background-color: #fff;
-    border: 2px solid #fa5959;
-}
-
-.sitenav-link:hover{
-    color: #fa5959;
-}
-
-.sitenav-link:active{
+.button:active{
     opacity: 0.6;
 }
 
-/* Site-header */
-.site-header-hero-wrapper {
-    padding-top: 56px;
-    padding-left: 170px;
+.button--red {
+    background-color: var(--red);
+    color: #fff;
 }
 
-.site-header-container{
-    display: flex;
+.button--red:hover{
+    border-color: var(--red);
+    background-color: #fff;
+    color: var(--red);
 }
 
-.site-header-logo-img{
-    width: 149px;
-    height: 25px;
+.button--blue {
+    background-color: var(--blue);
+    color: #fff;
 }
 
-.sitenav-list {
-    margin-top: 5px;
-    padding-left: 503px;
-    list-style: none;
-    display: flex;
+.button--blue:hover{
+    border-color: var(--blue);
+    background-color: #fff;
+    color: var(--red);
 }
 
-.sitenav-item:not(:last-child) {
-    margin-right: 44px;
+.button--gry {
+    background-color: #f7f7f7;
+    color: var(--text-color);
 }
 
-.sitenav-link {
-    font-family: "Rubik", "Arial", sans-serif;
+.button--grey:hover{
+    border-color: #5b6074;
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+.button-block{
+    display: block;
+    width: 100%;
+}
+
+.button--site-header{
+    padding: 10px 31px;
     font-size: 13px;
     line-height: 17px;
-    font-weight: 400;
-    color: #242A45;
-    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* LOGO */
+.logo {
+    display: block;
     text-decoration: none;
-    align-items: right;
+}
+
+.logo:hover{
+    opacity: 0.8;
+}
+
+
+.logo:active{
+    opacity: 0.6;
+}
+
+.logo__img {
+    display: block;
+    width: 149px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* SITENAV */
+.sitenav{
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.sitenav__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 48px;
+}
+
+.sitenav__link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.sitenav__link:hover{
+    color: var(--red);
+}
+
+.sitenav__link:active{
+    opacity: 0.6;
+}
+
+/* SITE-HEADER */
+.site-header {
+    text-transform: uppercase;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.site-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__logo {
+    margin-right: auto;
+}
+
+.site-header__sitenav {
+    margin-right: 48px;
 }
 
 
@@ -223,11 +283,39 @@ html {
 }
 
 
-/* TABS */
-.tabs {
-
+/* FEATURE-TAB-PANEL */
+.feature-tab-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.feature-tab-panel__img {
+    margin-right: 30px;
+    object-fit: contain;
+}
+
+.feature-tab-panel__info {
+    width: 445px;
+}
+
+.feature-tab-panel__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.feature-tab-panel__text {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* TABS */
 .tabs__list {
     display: flex;
     justify-content: center;
@@ -267,97 +355,20 @@ html {
     opacity: 0.6;
 }
 
-/* HERO */
-.box{
-    width: 540px;
-    height: 292px;
-    margin-top: 273px;
-}
-
-.hero-info-werapper{
-    display: flex;
-}
-
-.hero-heading {
-    font-family: "Rubik", "Arial", sans-serif;
-    font-size: 48px;
-    line-height: 52px;
-    font-weight: 500;
-}
-
-.hero-text{
-    font-family: "Rubik", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-}
-
-
-/* IMAGES */
-.background-image{
-    background-image: url(../img/orqakok.png);
+.tabs__panels {
+    padding-top: 75px;
+    padding-bottom: 165px;
+    background-image: url(../img/Rectangle\ Copy\ 14.jpg);
     background-repeat: no-repeat;
-    position: absolute;
-    width: 1000px;
-    height: 352px;
-    margin-left: 200px;
-    margin-top: 336px;
-}  
-
-.hero-img {
-    position: absolute;
-    width: 574px;
-    height: 381px;
-    margin-right: 772px;
-    margin-top: 204px;
-} 
-
-
-/* BUTTONS */
-.hero-button{
-    background-color: #5267df;
-    border-radius: 5px;
-    width: 166px;
-    height: 48px;
-    border: 2px solid #5267df;
+    background-position: calc(50% -580px) 156px;
 }
 
-.hero-button-color{
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    width: 166px;
-    height: 48px;
-    border: 2px solid #f7f7f7;
-    transition: border 0.3s ease; ;
-}
-
-.hero-button-color:hover{
-    border: 2px solid #5B6074;
-}
-
-.hero-button:hover{
-    background-color: #fff;
-}
-
-.link-button {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 28px;
-    color: #fff;
-}
-
-.link-button:hover{
-    color: #5267df;
-}
-
-.link-button-color{
-    text-decoration: none;
-    color: #242A45;
+.tabs__panel--active{
+    display: block;
 }
 
 
 /* FEATURES */
-
 .features-section-info{
     margin-bottom: 44px;
 }
