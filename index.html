@@ -44,15 +44,15 @@
                     <h1 class="hero__title">A Simple Bookmark Manager</h1>
                     <p class="hero__description">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                     <div class="hero__actions">
-                        <a class="hero__actions-item button button--blue" href="">Get it on Chrome</a>
-                        <a class="hero__actions-item button button--grey" href="">Get it on Firefox</a>
+                        <a class="hero__actions-item button button--blue" href="https://www.google.ru/intl/ru/chrome/thank-you.html?brand=YTUH&statcb=1&installdataindex=empty&defaultbrowser=0">Get it on Chrome</a>
+                        <a class="hero__actions-item button button--grey" href="https://www.mozilla.org/ru/firefox/new/">Get it on Firefox</a>
                     </div>
                 </div>
 
                 <img class="hero-img" src="img/hero-img.svg" alt="Bookmark manager illustration" width="578" height="385">
             </div>
         </div>
-    </main>
+    
     <section class="features section"> 
         <div class="container">
             <div class="features-section-info section__info">
@@ -65,13 +65,13 @@
                 <!-- TABS-LIST -->
                 <ul class="tabs__list">
                     <li class="tabs__item tabs__item--active">
-                        <a class="tabs__link" href="#feature-simple-bookmarking">Simple Bookmarking</a>
+                        <a class="tabs__link js-tab-link" href="#feature-simple-bookmarking" data-tab-target="#feature-simple-bookmarking">Simple Bookmarking</a>
                     </li>
                     <li class="tabs__item">
-                        <a class="tabs__link" href="#feature-speedy-searching">Speedy Searching</a>
+                        <a class="tabs__link js-tab-link" href="#feature-speedy-searching" data-tab-target="#feature-speedy-searchingz">Speedy Searching</a>
                     </li>
                     <li class="tabs__item">
-                        <a class="tabs__link" href="#feature-easy-sharing">Easy Sharing</a>
+                        <a class="tabs__link js-tab-link" href="#feature-easy-sharing" data-tab-target="#feature-easy-sharing">Easy Sharing</a>
                     </li>
                 </ul>
             </div>
@@ -80,9 +80,9 @@
                 <!-- TABS-PANELS -->
                 <div class="tabs__panels">
                     <div class="container">
-                        <div class="tabs__panel tabs__panel--active" id=""feature-simplr-bookmarking>
+                        <div class="tabs__panel tabs__panel--active" id=""feature-simple-bookmarking>
                             <section class="feature-tab-panel">
-                                <img class="feature-tab-panel__img" src="img/simple-bookmarking-illutratson@2x.png" alt="Bookmark manager illustration" width="536" height="346">
+                                <img class="feature-tab-panel__img" src="img/simple-bookmarking-illutratson.svg " alt="Bookmark manager illustration" width="536" height="346">
                                 <div class="feature-tab-panel__info">
                                     <h3 class="feature-tab-panel__title">Bookmark in one click</h3>
                                     <p class="feature-tab-panel__text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
@@ -93,7 +93,7 @@
     
                         <div class="tabs__panel" id="feature-speedy-searching">
                             <section class="feature-tab-panel">
-                                <img class="feature-tab-panel__img" src="img/feature-intelligent-search-t@2x.png" alt="Bookmark search interface illustration" width="468" height="393">
+                                <img class="feature-tab-panel__img" src="img/feature-intelligent-search-t.svg" alt="Bookmark search interface illustration" width="468" height="393">
                                 <div class="feature-tab-panel__info">
                                     <h3 class="feature-tab-panel__title">Intelligent search</h3>
                                     <p class="feature-tab-panel__text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
@@ -124,20 +124,50 @@
         <div class="container">
             <div class="section__info">
                 <h2 class="section__title">Download the extension</h2>
-                <p class="section-description">We've got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+                <p class="section-description">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>
+
+            <!-- EXTENSIONS-LIST -->
+    <ul class="extensions__list lists">
+        <li class="list__item">
+            <img class="list__img" src="img/chrome 2.svg" alt="chrome brauzeri logosi" width="102" height="100">
+            <h3 class="list__heading">Add to Chrome</h3>
+            <span class="list__text">Minimium version 62</span>
+            <img class="img__list" src="img/Combined Shape (1).svg" alt="nuqtalar-cheksiz" width="284" height="4">
+            <a class="button button--blue button-block" href="https://www.google.ru/intl/ru/chrome/thank-you.html?brand=YTUH&statcb=1&installdataindex=empty&defaultbrowser=0" target="_blank">Add & Install Extension</a>
+        </li>
+
+        <li class="list__item">
+            <img class="list__img" src="img/Path.svg" alt="fire fox brauzeri logosi" width="102" height="100">
+            <h3 class="list__heading">Add to Firefox</h3>
+            <span class="list__text">Minimum version 55</span>
+            <img class="img__list" src="img/Combined Shape (1).svg" alt="nuqtalar-cheksiz" width="284" height="4">
+            <a class="button button--blue button-block" href="https://www.mozilla.org/ru/firefox/new/" target="_blank">Add & Install Extension</a>
+        </li>
+
+        <li class="list__item">
+            <img class="list__img" src="img/Combined Shape.svg" alt="Opera brauzeri logosi" width="102" height="100">
+            <h3 class="list__heading">Add to Opera</h3>
+            <span class="list__text">Minimum version 46</span>
+            <img class="img__list" src="img/Combined Shape (1).svg" alt="nuqtalar-cheksiz" width="284" height="4">
+            <a class="button button--blue button-block" href="https://www.techspot.com/downloads/393-opera-browser.html" target="_blank">Add & Install Extension</a>
+        </li>
+    </ul>
         </div>
     </section>
 
 
     <!-- FAQ -->
-    <section class="section">
+    <section class="faq section">
         <div class="container">
             <div class="section__info">
                 <h2 class="section__title">Frequently Asked Questions</h2>
-                <p class="section-description">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+                <p class="section-description">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
             </div>
         </div>
     </section>
+</main>
+
+    <script src="/main.js"></script>
 </body>
 </html>
